@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>ft-unb-latex-template by manoelcampos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">ft-unb-latex-template</h1>
-      <h2 class="project-tagline">Modelo em Latex para elaboração de dissertações e teses da Universidade de Brasília (UnB)</h2>
-      <a href="https://github.com/manoelcampos/ft-unb-latex-template" class="btn">View on GitHub</a>
-      <a href="https://github.com/manoelcampos/ft-unb-latex-template/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/manoelcampos/ft-unb-latex-template/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h2>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>ft-unb-latex-template by manoelcampos</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>ft-unb-latex-template</h1>
+        <h2>Modelo em Latex para elaboração de dissertações e teses da Universidade de Brasília (UnB)</h2>
+        <a href="https://github.com/manoelcampos/ft-unb-latex-template" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
 <a id="modelo-em-latex-para-elaboração-de-dissertações-e-teses-da-universidade-de-brasília-unb" class="anchor" href="#modelo-em-latex-para-elabora%C3%A7%C3%A3o-de-disserta%C3%A7%C3%B5es-e-teses-da-universidade-de-bras%C3%ADlia-unb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modelo em Latex para elaboração de dissertações e teses da Universidade de Brasília (UnB)</h2>
 
 <p>Este é um modelo (template) Latex <strong>NÃO OFICIAL</strong> para elaboração de dissertações e teses da <a href="http://ftd.unb.br">Faculdade de Tecnologia (FT)</a> da <a href="http://unb.br">UnB</a>. Esta é uma versão atualizada por <a href="http://manoelcampos.com">Manoel Campos</a>, adicionando recursos como "página de assinaturas" da dissertação/tese e organizando o código do template para que o mesmo não fique misturado com o conteúdo do documento sendo escrito pelo acadêmico. </p>
 
-<p>Esta versão também removeu a necessidade de instalação do template em uma pasta específica do sistema, permitindo que ele fique dentro da pasta da dissertação/tese e tornando seu uso direto: basta baixar, fazer as alterações que desejar e compilar. Além disso, a removação da necessidade de instalação do template em uma pasta global permite o uso do mesmo em qualquer sistema operacional que tenha um compilador PDFLatex.</p>
+<p>Esta versão também removeu a necessidade de instalação do template em uma pasta específica do sistema, permitindo que ele fique dentro da pasta da dissertação/tese e tornando seu uso direto: basta baixar, fazer as alterações que desejar e compilar. Além disso, a removação da necessidade de instalação do template em uma pasta global específica para sistemas <em>\</em>nix<em>, permite o uso do mesmo em qualquer sistema operacional que tenha um compilador *PDFLatex</em>.</p>
 
 <h2>
 <a id="estrutura-do-projeto" class="anchor" href="#estrutura-do-projeto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Estrutura do projeto</h2>
@@ -38,12 +47,12 @@
 <strong>imagens</strong>: pasta onde as imagens da sua dissertação/tese devem ser salvas para facilitar a organização</li>
 </ul>
 
-<p>Os arquivos na raiz da pasta são arquivos de exemplo de uma dissertação de mestrado. O arquivo principal foi apropriadamente nomeado de <a href="principal.tex">principal.tex</a>. A partir dele é que é feita a compilação do documento. Cada outro arquivo .tex é uma parte específica do documento de exemplo (como resumo, cada capítulo, conclusão, apêndices, etc). As referências a serem utilizadas devem estar no arquivo <a href="referencias.bib">referencias.bib</a>.</p>
+<p>Os arquivos na raiz da pasta são arquivos de exemplo de uma dissertação de mestrado. O arquivo principal foi apropriadamente nomeado de <a href="principal.tex">principal.tex</a>. A partir dele é feita a compilação do documento. Cada outro arquivo .tex é uma parte específica do documento de exemplo (como resumo, cada capítulo, conclusão, apêndices, etc). As referências a serem utilizadas devem estar no arquivo <a href="referencias.bib">referencias.bib</a>.</p>
 
 <h2>
 <a id="compilando-sua-dissertaçãotese" class="anchor" href="#compilando-sua-disserta%C3%A7%C3%A3otese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilando sua Dissertação/Tese</h2>
 
-<p>Sua dissertação ou tese utilizando o template deve ser compilada com o compilador PDFLatex, que faz parte das distribuições Latex disponíveis para a maioria dos sistemas operacionais. Para editar os documentos *.tex, pode ser utilizado qualquer editor Latex. Um excelente editor é o <a href="http://www.texstudio.org">TeXstudio</a>, que além de ser software livre, está disponível para Windows, Linux e MacOS.</p>
+<p>Sua dissertação ou tese utilizando o template deve ser compilada com o compilador <em>PDFLatex</em>, que faz parte das distribuições Latex disponíveis para a maioria dos sistemas operacionais. Para editar os documentos *.tex, pode ser utilizado qualquer editor Latex. Um excelente editor é o <a href="http://www.texstudio.org">TeXstudio</a>, que além de ser software livre, está disponível para Windows, Linux e MacOS.</p>
 
 <p>Para quem é íntimo do terminal e de ferramentas de desenvolvimento, é disponibilizado um arquivo <a href="Makefile">Makefile</a> que executa todos os comandos para compilar corretamente o documento. Em sistemas Linux, BSD e MacOS que possuam a ferramenta <em>make</em> instalada, basta entrar na pasta do projeto e digitar <code>make</code> para compilar. Se tudo correr bem, o documento <a href="principal.pdf">principal.pdf</a> será gerado.</p>
 
@@ -73,14 +82,24 @@
 <ul>
 <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-NonCommercial-ShareAlike 3.0 Unported CC BY-NC-SA 3.0</a></li>
 </ul>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/manoelcampos/ft-unb-latex-template">ft-unb-latex-template</a> is maintained by <a href="https://github.com/manoelcampos">manoelcampos</a>.</span>
+        <aside id="sidebar">
+          <a href="https://github.com/manoelcampos/ft-unb-latex-template/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/manoelcampos/ft-unb-latex-template/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+          <p class="repo-owner"><a href="https://github.com/manoelcampos/ft-unb-latex-template"></a> is maintained by <a href="https://github.com/manoelcampos">manoelcampos</a>.</p>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
