@@ -28,56 +28,160 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h2>
-<a id="modelo-em-latex-para-elaboração-de-dissertações-e-teses-da-universidade-de-brasília-unb" class="anchor" href="#modelo-em-latex-para-elabora%C3%A7%C3%A3o-de-disserta%C3%A7%C3%B5es-e-teses-da-universidade-de-bras%C3%ADlia-unb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modelo em Latex para elaboração de dissertações e teses da Universidade de Brasília (UnB)</h2>
+          <h1>
+<a id="modelo-em-latex-para-elaboração-de-monografias-dissertações-e-teses-da-universidade-de-brasília-unb" class="anchor" href="#modelo-em-latex-para-elabora%C3%A7%C3%A3o-de-monografias-disserta%C3%A7%C3%B5es-e-teses-da-universidade-de-bras%C3%ADlia-unb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Modelo em Latex para elaboração de monografias, dissertações e teses da Universidade de Brasília (UnB)</h1>
 
-<p>Este é um modelo (template) Latex <strong>NÃO OFICIAL</strong> para elaboração de dissertações e teses da <a href="http://ftd.unb.br">Faculdade de Tecnologia (FT)</a> da <a href="http://unb.br">UnB</a>. Esta é uma versão atualizada por <a href="http://manoelcampos.com">Manoel Campos</a>, adicionando recursos como "página de assinaturas" da dissertação/tese e organizando o código do template para que o mesmo não fique misturado com o conteúdo do documento sendo escrito pelo acadêmico. </p>
+<hr>
 
-<p>Esta versão também removeu a necessidade de instalação do template em uma pasta específica do sistema, permitindo que ele fique dentro da pasta da dissertação/tese e tornando seu uso direto: basta baixar, fazer as alterações que desejar e compilar. Além disso, a removação da necessidade de instalação do template em uma pasta global específica para sistemas <em>\</em>nix<em>, permite o uso do mesmo em qualquer sistema operacional que tenha um compilador *PDFLatex</em>.</p>
+<p><img src="imagens/exemplo.png" alt="Capa de uma dissertação de exemplo utilizando o template"></p>
+
+<p>Este é um modelo (template) Latex <strong>NÃO OFICIAL</strong> para elaboração de monografias, 
+dissertações e teses da <a href="http://ftd.unb.br">Faculdade de Tecnologia (FT)</a> da <a href="http://unb.br">UnB</a>. 
+Esta é uma versão atualizada por <a href="http://manoelcampos.com">Manoel Campos</a>, adicionando recursos como "página de assinaturas" 
+e organizando o código do template para que o mesmo não fique misturado com o conteúdo do documento 
+sendo escrito pelo acadêmico. </p>
+
+<p>Esta versão também removeu a necessidade de instalação do template em uma pasta específica do sistema, 
+permitindo que ele fique dentro da pasta da dissertação/tese e tornando seu uso direto: 
+basta baixar, fazer as alterações que desejar e compilar, desde que tenha uma distribuição Latex instalada 
+(veja detalhes na seção a seguir). 
+Além disso, a remoção da necessidade de instalação do template em uma pasta global específica para sistemas *nix, 
+permite o uso do mesmo em qualquer sistema operacional que tenha um compilador <em>PDFLatex</em>.</p>
+
+<h1>
+<a id="como-utilizar-o-modelo-para-escrever-sua-monografia-dissertação-ou-tese" class="anchor" href="#como-utilizar-o-modelo-para-escrever-sua-monografia-disserta%C3%A7%C3%A3o-ou-tese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Como utilizar o modelo para escrever sua monografia, dissertação ou tese</h1>
+
+<p>Para utilizar o modelo são necessários alguns softwares instalados em seu sistema operacional.
+O modelo pode ser utilizado em Windows, Linux e Mac OSX.
+A seguir são apresentados mais detalhes.</p>
 
 <h2>
-<a id="estrutura-do-projeto" class="anchor" href="#estrutura-do-projeto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Estrutura do projeto</h2>
+<a id="editor-de-documentos-latex" class="anchor" href="#editor-de-documentos-latex" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Editor de documentos LaTeX</h2>
+
+<p>Para criar e editar arquivos tex, apesar de não ser um pré-requisito, o mais recomendável é utilizar um editor LaTeX específico.
+No entanto, pode-se editar os arquivos tex em qualquer editor de texto que suporte codificação de caracteres em UTF-8
+(como o Notepad do Windows ou qualquer editor de texto nativo de sistemas Linux e Mac OSX).</p>
+
+<p>Existem diversas alternativas de editores, tanto gratuitos como pagos.
+Um excelente editor que funciona em diversos sistemas operacionais
+é o <a href="http://www.texstudio.org">TeXstudio</a>, que foi baseado em versões atualmente descontinuadas
+do Texmaker e TexMakerX. </p>
+
+<h2>
+<a id="pré-requisitos-para-compilar-seu-documento" class="anchor" href="#pr%C3%A9-requisitos-para-compilar-seu-documento" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pré-requisitos para compilar seu documento</h2>
+
+<p>Para compilar seu documento utilizando este modelo é preciso ter uma uma distribuição LaTeX instalada. 
+Existem distribuições disponíveis para os sistemas operacionais mais conhecidos como Windows, Linux e Mac OSX,
+como será visto a seguir.</p>
+
+<p>O compilador a ser utilizado, disponível após a instalação da distribuição LaTeX, é o <em>PDFLatex</em>, mas provavelmente pode
+utilizar outros compiladores.</p>
+
+<p>As sub-secções a seguir apresentam detalhes de instalação dos pré-requisitos para cada um dos sistemas operacionais em que o modelo foi testado.</p>
+
+<h3>
+<a id="usuários-de-windows" class="anchor" href="#usu%C3%A1rios-de-windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usuários de Windows</h3>
+
+<p>Em sistemas Windows deve ser instalada a distribuição LaTeX denominada <a href="http://miktex.org">MiKTeX</a>.</p>
+
+<h3>
+<a id="usuários-de-linux" class="anchor" href="#usu%C3%A1rios-de-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usuários de Linux</h3>
+
+<p>Em sistemas Linux deve ser instalada a distribuição LaTeX denominada <em>texlive-full</em>.
+A instalação pode ser feita por meio de ferramentas gráficas como a "Central de Software" disponível em sistemas
+como Ubuntu, ou por meio do terminal utilizando um gerenciador de pacotes.</p>
+
+<p>Diferentes distribuições Linux possuem seus próprios gerenciadores de pacote e cada usuário deve verificar qual
+é o utilizado em seu sistema. No entanto, a seguir são mostrados alguns exemplos
+de gerenciadores de pacotes, a serem executados a partir de um terminal, para distribuições Linux conhecidas.</p>
+
+<ul>
+<li>Debian e derivados (como Ubuntu e Linux Mint): <code>sudo apt-get install texlive-full</code>
+</li>
+<li>Red Hat e derivados (como Fedora e CentOS): <code>sudo yum install texlive-full</code>
+</li>
+<li>ArchLinux e derivados (como ArchBang): <code>sudo pacman install texlive-full</code>
+</li>
+</ul>
+
+<h3>
+<a id="usuários-de-mac-osx" class="anchor" href="#usu%C3%A1rios-de-mac-osx" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usuários de Mac OSX</h3>
+
+<p>Em sistemas Mac OSX deve ser instalada a distribuição LaTeX denominada <a href="https://tug.org/mactex/">MacTeX</a>.</p>
+
+<h2>
+<a id="como-compilar-o-seu-documento-para-pdf" class="anchor" href="#como-compilar-o-seu-documento-para-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Como compilar o seu documento para PDF</h2>
+
+<p>Para compilar sua monografia, dissertação ou tese para um arquivo PDF utilizando um editor latex como 
+descrito nas seções acima, deve ser utilizado o compilador <em>PDFLaTeX</em> (normalmente definido como padrão nos editores). </p>
+
+<p>O local onde define-se o compilador padrão ou onde pode-se
+escolher o compilador varia de acordo com o editor em uso.
+Assim, verifique a documentação do seu editor para mais detalhes.</p>
+
+<p>Para os programadores que são familiarizados com o terminal,
+há um arquivo <a href="Makefile">Makefile</a> que permite a compilação do documento
+por meio da linha de comando. Desta forma, tendo o programa <em>make</em> instalado
+(que já vem instalado por padrão em sistemas Linux e Mac OSX),
+há os comandos abaixo disponíveis:</p>
+
+<ul>
+<li>
+<strong>make</strong> compila o documento; </li>
+<li>
+<strong>make clean</strong> apaga todos os arquivos temporários criados no processo de compilação.</li>
+</ul>
+
+<p>Se o nome do arquivo principal do seu trabalho for diferente de <em>principal.tex</em>,
+para compilar utilizando o comando <em>make</em>, é preciso editar o arquivo <a href="Makefile">Makefile</a> 
+e informar o nome do documento tex principal na primeira linha do <em>Makefile</em>.</p>
+
+<h1>
+<a id="exemplo" class="anchor" href="#exemplo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Exemplo</h1>
+
+<p>Uma dissertação de exemplo utilizando o template <a href="principal.pdf">é disponibilizada juntamente com o projeto</a>.</p>
+
+<h1>
+<a id="estrutura-do-projeto" class="anchor" href="#estrutura-do-projeto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Estrutura do projeto</h1>
 
 <p>Depois de baixados os arquivos do projeto você terá a seguinte estrutura de pastas:</p>
 
 <ul>
 <li>
-<strong>template-FT-UnB</strong>: arquivos do template. A não ser que deseje fazer melhorias ou correções no template, os arquivos desta pasta não devem ser modificados.</li>
+<strong>template-FT-UnB</strong>: arquivos do template. A não ser que deseje fazer melhorias ou correções no template, 
+os arquivos desta pasta não devem ser modificados.</li>
 <li>
-<strong>imagens</strong>: pasta onde as imagens da sua dissertação/tese devem ser salvas para facilitar a organização</li>
+<strong>imagens</strong>: pasta onde as imagens da sua monografia/dissertação/tese devem ser salvas para facilitar a organização</li>
 </ul>
 
-<p>Os arquivos na raiz da pasta são arquivos de exemplo de uma dissertação de mestrado. O arquivo principal foi apropriadamente nomeado de <a href="principal.tex">principal.tex</a>. A partir dele é feita a compilação do documento. Cada outro arquivo .tex é uma parte específica do documento de exemplo (como resumo, cada capítulo, conclusão, apêndices, etc). As referências a serem utilizadas devem estar no arquivo <a href="referencias.bib">referencias.bib</a>.</p>
+<p>Os arquivos na raiz da pasta são arquivos de exemplo de uma dissertação de mestrado. 
+O arquivo principal foi apropriadamente nomeado de <a href="principal.tex">principal.tex</a>. 
+A partir dele é feita a compilação do documento. 
+Cada arquivo .tex adicional é uma parte específica do documento de exemplo (como resumo, capítulos, conclusão, apêndices, etc). 
+As referências a serem utilizadas devem estar no arquivo <a href="referencias.bib">referencias.bib</a>.</p>
 
-<h2>
-<a id="compilando-sua-dissertaçãotese" class="anchor" href="#compilando-sua-disserta%C3%A7%C3%A3otese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Compilando sua Dissertação/Tese</h2>
+<h1>
+<a id="autor" class="anchor" href="#autor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autor</h1>
 
-<p>Sua dissertação ou tese utilizando o template deve ser compilada com o compilador <em>PDFLatex</em>, que faz parte das distribuições Latex disponíveis para a maioria dos sistemas operacionais. Para editar os documentos *.tex, pode ser utilizado qualquer editor Latex. Um excelente editor é o <a href="http://www.texstudio.org">TeXstudio</a>, que além de ser software livre, está disponível para Windows, Linux e MacOS.</p>
+<p>Não sou o autor original deste projeto <g-emoji alias="relaxed" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/263a.png">☺️</g-emoji>, fiz apenas a reestruturação do mesmo para facilitar o uso e impedir 
+que comandos do template sejam misturados ao documento do acadêmico.</p>
 
-<p>Para quem é íntimo do terminal e de ferramentas de desenvolvimento, é disponibilizado um arquivo <a href="Makefile">Makefile</a> que executa todos os comandos para compilar corretamente o documento. Em sistemas Linux, BSD e MacOS que possuam a ferramenta <em>make</em> instalada, basta entrar na pasta do projeto e digitar <code>make</code> para compilar. Se tudo correr bem, o documento <a href="principal.pdf">principal.pdf</a> será gerado.</p>
+<p>Desta forma, os créditos pela autoria do projeto devem ser dados ao 
+<a href="https://lara.unb.br/%7Egaborges/">Prof. D.Sc. Geovany Araujo Borges (UnB)</a>.</p>
 
-<p>Para apagar todo o lixo gerado pela compilação do documento, pode-se utilizar o <a href="Makefile">Makefile</a>, bastando executar o comando <code>make clean</code>.</p>
-
-<h2>
-<a id="autor" class="anchor" href="#autor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Autor</h2>
-
-<p>Não sou o autor original deste projeto <img class="emoji" title=":relaxed:" alt=":relaxed:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/263a.png" height="20" width="20" align="absmiddle">, fiz apenas a reestruturação do mesmo para facilitar o uso e impedir que comandos do template sejam misturados ao documento do acadêmico.</p>
-
-<p>Desta forma, os créditos pela autoria do projeto devem ser dados ao <a href="https://lara.unb.br/%7Egaborges/">Prof. D.Sc. Geovany Araujo Borges (UnB)</a>.</p>
-
-<h2>
-<a id="colaboradores" class="anchor" href="#colaboradores" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colaboradores</h2>
+<h1>
+<a id="colaboradores" class="anchor" href="#colaboradores" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Colaboradores</h1>
 
 <ul>
 <li>Nathalie Pinheiro</li>
 <li>André Calmon</li>
 <li>Renan Utida</li>
 <li>
-<a href="http://manoelcampos.com">Manoel Campos da Silva Filho</a> (eu <img class="emoji" title=":v:" alt=":v:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/270c.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20" align="absmiddle">)</li>
+<a href="http://manoelcampos.com">Manoel Campos da Silva Filho</a> (eu <g-emoji alias="v" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/270c.png">✌️</g-emoji> <g-emoji alias="smile" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png">😄</g-emoji>)</li>
 </ul>
 
-<h2>
-<a id="licença" class="anchor" href="#licen%C3%A7a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licença:</h2>
+<h1>
+<a id="licença" class="anchor" href="#licen%C3%A7a" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licença:</h1>
 
 <ul>
 <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-NonCommercial-ShareAlike 3.0 Unported CC BY-NC-SA 3.0</a></li>
